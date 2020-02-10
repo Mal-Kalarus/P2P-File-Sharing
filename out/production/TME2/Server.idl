@@ -1,0 +1,15 @@
+/*
+Server.idl file: specifies all of the objects and their interfaces using the OMG's Interface Definition Language (IDL)
+
+Student name: Malgorzata Kalarus
+Student id:
+ */
+ module ServerApp {
+  interface ServerHelp {
+  string login(in string username, in string password);
+  string upload(in string username, in string filename, in string clientOpt );
+  string updateDatabase(in string username);
+  // method shuts down the ORB
+  oneway void shutdown();
+  };
+};
